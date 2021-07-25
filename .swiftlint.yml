@@ -7,9 +7,11 @@ opt_in_rules:
   - vertical_whitespace_closing_braces
   - vertical_whitespace_opening_braces
 
+
 excluded:
   - Kadai1/AppDelegate.swift
   - Kadai1/SceneDelegate.swift
+
 
 line_length:
   warning: 300
