@@ -20,17 +20,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction private func didTappedButton(_ sender: UIButton) {
-        let result = getSum()
-        resultLabel.text = String(result)
+        let sum = calculateSum()
+        resultLabel.text = String(sum)
     }
 
-    private func getSum() -> Int {
+    private func calculateSum() -> Int {
         let num1 = Int(textField1.text ?? "") ?? 0
         let num2 = Int(textField2.text ?? "") ?? 0
         let num3 = Int(textField3.text ?? "") ?? 0
         let num4 = Int(textField4.text ?? "") ?? 0
         let num5 = Int(textField5.text ?? "") ?? 0
-        let result = num1 + num2 + num3 + num4 + num5
-        return result
+        return num1 + num2 + num3 + num4 + num5
     }
 }
